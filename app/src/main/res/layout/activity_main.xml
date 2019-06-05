@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weatherbackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="208dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="Enter City!"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        app:fontFamily="@font/autour_one" />
+
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="297dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:textSize="15dp"
+        tools:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityName"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="11dp"
+        android:onClick="findWeather"
+        android:text="how you feelin?" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_below="@id/cityDisplay"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="50dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/cityDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/button"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/days_one" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:layout_below="@id/resultView"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/happy_monkey" />
+
+</RelativeLayout>
